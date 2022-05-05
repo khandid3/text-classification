@@ -22,3 +22,15 @@ Let TP be true positive, TN be true negative, FP be false positive, FN be false 
  * Precision = TP / (TP + FP)
  * Recall = TP / (TP + FN)
  * F1-score = (2 * Precision * Recall) / (Precision + Recall) 
+
+## Evaluation of the model
+
+I present you the different evaluation matrics for my model trained in Google Cloud. 
+
+The confusion matrix is present below
+
+![confusion matrix](https://github.com/khandid3/text-classification/blob/main/docs/confusion_matrix.png "confusion matrix")
+
+We observe that the best label predicted is A1, because 63 % of A1 difficulty items were predicted correctly, whereas other difficulty levels were predicted with a lower accuracy.  The worst label predicted is A2.
+
+Now I present you an animation of the evaluation matrix where I play with the onfidence threshold
