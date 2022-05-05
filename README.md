@@ -22,8 +22,3 @@ Let TP be true positive, TN be true negative, FP be false positive, FN be false 
  * Precision = TP / (TP + FP)
  * Recall = TP / (TP + FN)
  * F1-score = (2 * Precision * Recall) / (Precision + Recall) 
-
-
-
-
-                                                                                                             khandid3
