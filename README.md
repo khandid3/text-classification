@@ -46,7 +46,7 @@ We can compute the F1-score whit the confidence threshold at 0.4. It gives use:
 
 ## Next steps
 
-Now I want to call this model from my notebook in Google Colab. However, I got an error when I want to import automl_v1 from google.cloud package. I was not able to fix it yet. [Access to the notebook]()
+Now I want to call this model from my notebook in Google Colab. However, I got an error when I want to import automl_v1 from google.cloud package. I was not able to fix it yet. [Access to the notebook](https://github.com/khandid3/text-classification/blob/main/code/text_classification.ipynb)
 
 
 
