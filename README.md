@@ -34,3 +34,12 @@ The confusion matrix is present below
 We observe that the best label predicted is A1, because 63 % of A1 difficulty items were predicted correctly, whereas other difficulty levels were predicted with a lower accuracy.  The worst label predicted is A2.
 
 Now I present you an animation of the evaluation matrix where I play with the onfidence threshold
+
+https://user-images.githubusercontent.com/66648452/167023008-7fbabf6d-67f2-48b5-9334-bc910f5fc6d4.mov
+
+We observe than when the recall dicreases, the precision increases, and vice-versa.
+We can also point out the  intersection between recall score and precision score when the confidence threshold value is 0.4.
+At this stage, the precision equlas 49.78% and the recall equals 48.02%.
+
+
+
