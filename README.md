@@ -1,6 +1,6 @@
 # Welcome to this repository about text classification!
 
-## Descirption of the project
+## Description of the project 
 
 In this project, we want to predict the difficulty of a given french text using Google Cloud Natual Language. 
 
