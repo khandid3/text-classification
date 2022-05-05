@@ -9,3 +9,13 @@ The data set is called original_training_data.csv. We cleaned this data set and 
   * Deleting the 1st colum "id". To do so, we can just copy-paste our data [here](https://www.browserling.com/tools/delete-column), insert the columkn number you want to delete (in our case it is 1), select the option "delete column", copy the new data generated and it on a new csv file. Another way to do, it is to code it. You can for example create a dataframe with pandas and then delete the column and download the new data set,
   * We deleted the first row which contained the columns names, i.e. "sentence" and "difficulty". For that, we simply open the csv file with an editor and deleted the first line, e.g. you can just open the file with vim in the terminal,
   * We deleted the duplicated items.
+
+
+# Refresher for evaluation metrics
+
+Let TP be true positive, TN be true negative, FP be false positive, FN be false negative.
+
+ * Accuracy = (TP + TN) / (TP + TN + FP + FN)
+ * Precision = TP / (TP + FP)
+ * Recall = TP / (TP + FN)
+ * F1-score = (2 * Precision * Recall) / (Precision + Recall) 
