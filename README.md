@@ -6,6 +6,8 @@ In this project, we want to predict the difficulty of a given french text using 
 
 The labels are {A1, A2, B1, B2, C1, C2}.
 
+We will also deploy our model in Google Cloud, and make it accessible in the world wide web. 
+
 ## Methodology
 
 I trained the model on a dataset which contains almost 4800 labelled sentences. You can access this dataset in the folder [dataset](github.com/khandid3/text-classification/tree/main/data). 
@@ -44,9 +46,14 @@ At this stage, the precision equlas 49.78% and the recall equals 48.02%.
 We can compute the F1-score whit the confidence threshold at 0.4. It gives use:
 (2 * 0.4978 * 0.4802) / (0.4978 + 0.4802) = 0.49.
 
-## Next steps
+## Deploying the model in Google Cloud
 
-Now I want to call this model from my notebook in Google Colab. However, I got an error when I want to import automl_v1 from google.cloud package. I was not able to fix it yet. [Access to the notebook](https://github.com/khandid3/text-classification/blob/main/code/text_classification.ipynb)
+Using Flask, I deployed my model on the Google Cloud servers. I created an application accessible by [this link](). You can insert a sentence in the dedicated location in the website, press "predict difficulty" and it will gives you back the difficulty of you sentence.
 
+## Video presentation
+
+## Calling the model API through a notebook
+
+Now I want to call this model from my notebook in Google Colab. You can [access to the notebook](https://github.com/khandid3/text-classification/blob/main/code/text_classification.ipynb) and give a sentence in the final cell and it will detect you the language difficulty.
 
 
