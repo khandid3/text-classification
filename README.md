@@ -70,5 +70,5 @@ Now I want to call this model from my notebook in Google Colab. You can [access 
 
 ## Video presentation
 
-
+This is a [video presentation](https://youtu.be/fZi7YqF-fPM) of the project.
 
