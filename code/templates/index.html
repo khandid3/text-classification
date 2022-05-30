@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>
+        Text classification machine learning model
+    </title>
+    </head>
+    <style>
+        body{    
+        background-color: #FFFFFF;
+        }
+        h1{
+        background-color: #93B874;
+        }
+        p{
+        background-color: #ffffff;
+        }
+    </style>
+   <body>
+    <style>
+        
+        h1 {text-align: center;}
+        form {text-align: center;}
+        </style>
+     <h1> Enter the text in french you want to predict the difficulty. </h1>
+     <p> This website allows you to make prediction on the difficulty of a french given text. You can insert several sentences. When you click on submit button, it will display you the difficulty of the text. The model to make prediction is based on  classification concept from machine learning.
+            Our different classes are {A1, A2, B1, B2, C1, C2}. The model has been trained with Google Cloud Natural Language. You can access to the source code on my <a href="https://github.com/khandid3/text-classification">github page</a>. </p>
+      <form action = "{{ url_for('result')}}" method = "POST">
+        <label for="text">Text:</label> 
+        <input type="text" id="text_to_analyze" name="text_to_analyze" size="50" placeholder="Enter some text in french to determine its difficulty" required>
+         <input type = "submit" value = "predict difficulty!" , font = 30 size="70">
+      </form>
+   </body>
+    <div style="position: absolute; bottom: 5px; background-color: rgb(255, 255, 255)">
+    khandide, 2022. 
+    Developed in Lausanne. <br />
+    <a href="mailto:rafael.domin6uez@gmail.com">Contact me</a>
+    </div>
+</html>

@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+    <head>
+        <title>
+        Text prediction
+    </title>
+    </head>
+    <style>
+        body{    
+        background-color: #FFFFFF;
+        }
+        h1{
+        background-color: #93B874;
+        }
+        p{
+        background-color: #ffffff;
+        }
+    </style>
+   <body>
+    <style>
+
+        h1 {text-align: center;}
+        form {text-align: center;}
+        </style>
+     <h1> Here is the prediction for your text </h1>
+     <p> This table represents the probability for the text for each difficulty level. On the top the most probalisitic prediction. On the bottom the less. </a> </p>
+   <body>
+        <table border = 1 align=center >
+            <tr>
+                <th>Level</th>
+                <th>Score</th>
+            </tr>
+            {% for annotation_payload in data %}
+            <tr>
+                <td> {{annotation_payload.display_name}} </td>
+                <td> {{annotation_payload.classification.score}} </td>
+            </tr>
+            {% endfor %}
+            
+        </table>
+        <form action = "{{ url_for('result')}}" method = "POST" > <br /> <br /> <br />
+            <label for="text">New prediction:</label> 
+            <input type="text" id="text_to_analyze" name="text_to_analyze" size="50" placeholder="Enter some text in french to determine its difficulty" required>
+            <input type = "submit" value = "predict difficulty!" , font = 30 size="70">
+          </form>
+   </body>
+   <div style="position: absolute; bottom: 5px; background-color: rgb(255, 255, 255)">
+    khandide, 2022. 
+    Developed in Lausanne. <br />
+    <a href="mailto:rafael.domin6uez@gmail.com">Contact me</a>
+    </div>
+</html>
