@@ -48,12 +48,27 @@ We can compute the F1-score whit the confidence threshold at 0.4. It gives use:
 
 ## Deploying the model in Google Cloud
 
-Using Flask, I deployed my model on the Google Cloud servers. I created an application accessible by [this link](). You can insert a sentence in the dedicated location in the website, press "predict difficulty" and it will gives you back the difficulty of you sentence.
+Using Flask, I deployed my model on the Google Cloud servers. I created an application accessible by [this link](https://bsa-project-349122.ew.r.appspot.com). You can insert a text in the dedicated location in the website, press "predict difficulty!" and it will gives you back the difficulty of you sentence. You can find all the code and files to run the application in the [code section](https://github.com/khandid3/text-classification/blob/main/code/). The notebook is not necessary to run the application. 
+However, you must change in application.py file my credencials with yours (your json file, your project ID, you model ID, etc...).
+Then, to run the model locally in the Google Cloud Console, you must go in your project, then in the folder of your application, and run 
 
-## Video presentation
+```
+python3 application.py
+```
+This will allow you, with a web browser, to access to the application.
+If you want it to run in the web, you must run the command
+
+```
+gcloud app deploy
+```
+
+and waiting for the app to be deployed in the Google servers. This will generate you a link, from which everyone, with a internet connection, can access through a web browser.
 
 ## Calling the model API through a notebook
 
 Now I want to call this model from my notebook in Google Colab. You can [access to the notebook](https://github.com/khandid3/text-classification/blob/main/code/text_classification.ipynb) and give a sentence in the final cell and it will detect you the language difficulty.
+
+## Video presentation
+
 
 
