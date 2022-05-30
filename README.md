@@ -49,7 +49,7 @@ We can compute the F1-score whit the confidence threshold at 0.4. It gives use:
 ## Deploying the model in Google Cloud
 
 Using Flask, I deployed my model on the Google Cloud servers. I created an application accessible by [this link](https://bsa-project-349122.ew.r.appspot.com). You can insert a text in the dedicated location in the website, press "predict difficulty!" and it will gives you back the difficulty of you sentence. You can find all the code and files to run the application in the [code section](https://github.com/khandid3/text-classification/blob/main/code/). The notebook is not necessary to run the application. 
-However, you must change in application.py file my credencials with yours (your json file, your project ID, you model ID, etc...).
+However, you must change in application.py file my credencials with yours (your json file, your project ID, you model ID, etc...). And you will also need to upload your .json file containg your google credencials.
 Then, to run the model locally in the Google Cloud Console, you must go in your project, then in the folder of your application, and run 
 
 ```
